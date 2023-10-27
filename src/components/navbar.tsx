@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
   <div className="font-ZenMaru text-base my-2 flex justify-center lg:justify-start">
     {sidebarItems.map((item) => (
           <a 
-          className={`px-8 ${item.href === window.location.pathname ? 'text-persianRed ' : 'text-white'}`} 
+          className={`px-8  ${item.href === window.location.pathname ? 'text-persianRed ' : 'hover:text-wine transition-all text-white'}`} 
           href={item.href}>
             {item.title}
           </a>
