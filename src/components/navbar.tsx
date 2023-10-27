@@ -2,9 +2,9 @@ import React from 'react';
 
 const sidebarItems = [
   { href: '/', title: 'Home' },
-  { href: 'about', title: 'Sobre nós' },
-  { href: 'entenda', title: 'I.A. e viés algoritmo' },
-  { href: 'quiz', title: 'Quiz' },
+  { href: '/about', title: 'Sobre nós' },
+  { href: '/entenda', title: 'I.A. e viés algoritmo' },
+  { href: '/quiz', title: 'Quiz' },
 ];
 
 
