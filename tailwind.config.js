@@ -12,6 +12,10 @@ export default {
         night: '#121212',
         timberWolf: '#D7CDCC',
         grayTheme: '#282828',
+      },
+      fontFamily: {
+        ZenMaru: ['Zen Maru Gothic', 'serif'],
+        Oswald: ['Oswald', 'sans-serif'],
       }
     },
   },
