@@ -4,17 +4,6 @@ import Button from '../components/button';
 import { FiX, FiCheck } from "react-icons/fi";
 import quizData from '../data/quiz.json';
 
-function RandomQuiz(qtdGerada: number, totalQuestions: number) {
-  const randomQuestions = new Set();
-  while (randomQuestions.size < qtdGerada) {
-    const randomNumber = Math.floor(Math.random() * (totalQuestions));
-    randomQuestions.add(randomNumber);
-  }
-  return Array.from(randomQuestions);
-}
-
-
-
 interface QuizPlayProps {
   next: (step: number) => void;
   points: number;
@@ -33,18 +22,7 @@ interface Question {
 
 
 const QuizPlay: React.FC<QuizPlayProps> = ({next, points, setPoints, total}) => {
-  let quiz: Question[] = [];
-
-  const ordem = 'random'
-  if(ordem == 'random'){
-    const lista = RandomQuiz(total, quizData.questions.length);
-    lista.forEach(function(number) {
-      quiz.push(quizData.questions[number as number]);
-    });
-  }
-  else{
-    quiz = quizData.questions;
-  }
+  const quiz = quizData.questions;
   
   const [idx, setIdx] = useState(0);
   const [status, setStatus] = useState('na');  // na -> no answer // a1 -> already answer ia // a2 -> already answer humano
@@ -52,7 +30,7 @@ const QuizPlay: React.FC<QuizPlayProps> = ({next, points, setPoints, total}) => 
 
   return (
          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 m-2 h-full items-center">
-
+            
           <div className={`space-y-2 text-2xl p-4 " + ${status == 'na' ? 'hidden' : 'opacity-1'} `}>
             <p className={quiz[idx].resposta == 'ia' ? 'hidden' : ''}><b>Obra:</b> {quiz[idx].obra}</p>
             <p className={quiz[idx].resposta == 'ia' ? 'hidden' : ''}><b>Artista:</b> {quiz[idx].artista}</p>
