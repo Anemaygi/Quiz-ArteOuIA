@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import Navbar from '../components/navbar';
+// import Navbar from '../components/navbar';
 import Button from '../components/button';
 import { FiX, FiCheck } from "react-icons/fi";
 
@@ -30,19 +30,24 @@ const quiz = [
 
 quiz.push(quiz1[1]);
 
-const QuizPlay: React.FC = () => {
+interface QuizPlayProps {
+  next: (step: number) => void;
+  points: number;
+  setPoints: (result: number) => void;
+  total: number;
+}
+
+
+
+const QuizPlay: React.FC<QuizPlayProps> = ({next, points, setPoints, total}) => {
 
   const [idx, setIdx] = useState(0);
-  const [points, setPoints] = useState(0);
+  // const [points, setPoints] = useState(0);
   const [status, setStatus] = useState('na');  // na -> no answer // a1 -> already answer ia // a2 -> already answer humano
 
 
   return (
-    <div className="bg-[#0D0D0D] font-ZenMaru text-timberWolf h-screen  w-screen flex items-center p-2">
-      <div className='flex flex-col shadow-lg rounded-lg w-screen h-full overflow-auto p-4 bg-night'>
-        <Navbar />
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 m-2 h-full items-center">
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 m-2 h-full items-center">
 
           <div className={`space-y-2 text-2xl p-4 " + ${status == 'na' ? 'hidden' : 'opacity-1'} `}>
             <p className={quiz[idx].resposta == 'ia' ? 'hidden' : ''}><b>Obra:</b> {quiz[idx].obra}</p>
@@ -50,7 +55,6 @@ const QuizPlay: React.FC = () => {
             <p className={quiz[idx].resposta == 'humano' ? 'hidden' : ''}><b>Prompt:</b> {quiz[idx].prompt}</p>
             <p className="text-lg">{quiz[idx].descricao}</p>
           </div>
-
           <div className={status == 'na' ? `col-span-2` : `col-span-1`}>
             <div className="h-full flex justify-center items-center ">
               <img className="object-scale-down" src={quiz[idx].img} />
@@ -89,14 +93,14 @@ const QuizPlay: React.FC = () => {
           <div className={`w-full  h-fit flex justify-end items-end ${status == 'na' ? `hidden` : `opacity-1`}`}>
             <div className="m-3 w-56">
               <Button handleClick={() => {
+                
+                if(idx == total-1) next(2)
                 setIdx(idx + 1);
                 setStatus('na');
+                
               }} text="Continuar" />
             </div></div>
         </div>
-
-      </div>
-    </div>
 
   );
 };
