@@ -1,34 +1,19 @@
 
 import React, { useState } from 'react';
-// import Navbar from '../components/navbar';
 import Button from '../components/button';
 import { FiX, FiCheck } from "react-icons/fi";
+import quizData from '../data/quiz.json';
 
-const quiz1 = [
-  {
-    obra: 'Pretuguês',
-    artista: 'Rosana Paulino',
-    descricao: '“É engraçado como eles gozam a gente quando a gente diz que é Framengo. Chamam a gente de ignorante dizendo que a gente fala errado. E de repente ignoram que a presença desse r no lugar do l nada mais é que a marca linguística de um idioma africano, no qual o l inexiste. Afinal, quem que é o ignorante?”, explicou Lélia Gonzalez sobre o “Pretugûes”.',
-    prompt: '',
-    img: "https://revistamuseu.com.br/site/images/revista-museu/noticias/not_2022/not_2022_10/bandeira.jpg",
-    resposta: 'humano',
-  },
-  {
-    obra: '/aaa',
-    artista: 'Homeaa',
-    descricao: 'Homeaa',
-    prompt: 'Homeaaa',
-    img: "https://static.vecteezy.com/ti/fotos-gratis/t2/22653879-fantasia-ilha-com-cachoeiras-3d-ilustracao-elementos-do-isto-imagem-mobiliado-de-nasa-generativo-ai-gratis-foto.jpg",
-    resposta: 'ia',
-  },
+function RandomQuiz(qtdGerada: number, totalQuestions: number) {
+  const randomQuestions = new Set();
+  while (randomQuestions.size < qtdGerada) {
+    const randomNumber = Math.floor(Math.random() * (totalQuestions));
+    randomQuestions.add(randomNumber);
+  }
+  return Array.from(randomQuestions);
+}
 
-];
 
-const quiz = [
-  quiz1[0],
-]
-
-quiz.push(quiz1[1]);
 
 interface QuizPlayProps {
   next: (step: number) => void;
@@ -37,12 +22,31 @@ interface QuizPlayProps {
   total: number;
 }
 
+interface Question {
+  obra: string;
+  artista: string;
+  descricao: string;
+  prompt: string;
+  img: string;
+  resposta: string;
+}
 
 
 const QuizPlay: React.FC<QuizPlayProps> = ({next, points, setPoints, total}) => {
+  let quiz: Question[] = [];
 
+  const ordem = 'random'
+  if(ordem == 'random'){
+    const lista = RandomQuiz(total, quizData.questions.length);
+    lista.forEach(function(number) {
+      quiz.push(quizData.questions[number as number]);
+    });
+  }
+  else{
+    quiz = quizData.questions;
+  }
+  
   const [idx, setIdx] = useState(0);
-  // const [points, setPoints] = useState(0);
   const [status, setStatus] = useState('na');  // na -> no answer // a1 -> already answer ia // a2 -> already answer humano
 
 
@@ -54,6 +58,7 @@ const QuizPlay: React.FC<QuizPlayProps> = ({next, points, setPoints, total}) => 
             <p className={quiz[idx].resposta == 'ia' ? 'hidden' : ''}><b>Artista:</b> {quiz[idx].artista}</p>
             <p className={quiz[idx].resposta == 'humano' ? 'hidden' : ''}><b>Prompt:</b> {quiz[idx].prompt}</p>
             <p className="text-lg">{quiz[idx].descricao}</p>
+            {/* <p>{quiz.length}</p> */}
           </div>
           <div className={status == 'na' ? `col-span-2` : `col-span-1`}>
             <div className="h-full flex justify-center items-center ">
