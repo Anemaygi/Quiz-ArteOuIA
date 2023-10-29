@@ -26,7 +26,6 @@ const QuizPlay: React.FC<QuizPlayProps> = ({ next, points, setPoints, total }) =
         <p className={quiz[idx].resposta == 'ia' ? 'hidden' : ''}><b>Artista:</b> {quiz[idx].artista}</p>
         <p className={quiz[idx].resposta == 'humano' ? 'hidden' : ''}><b>Prompt:</b> {quiz[idx].prompt}</p>
         <p className="text-lg">{quiz[idx].descricao}</p>
-        {/* <p>{quiz.length}</p> */}
       </div>
       <div className={status == 'na' ? `col-span-2` : `col-span-1`}>
         <div className="h-full flex justify-center items-center ">
