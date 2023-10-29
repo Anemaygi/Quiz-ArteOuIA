@@ -1,0 +1,20 @@
+{
+  "questions": [
+    {
+      "obra": "Pretuguês",
+      "artista": "Rosana Paulino",
+      "descricao": "“É engraçado como eles gozam a gente quando a gente diz que é Framengo. Chamam a gente de ignorante dizendo que a gente fala errado. E de repente ignoram que a presença desse r no lugar do l nada mais é que a marca linguística de um idioma africano, no qual o l inexiste. Afinal, quem que é o ignorante?”, explicou Lélia Gonzalez sobre o “Pretugûes”.",
+      "prompt": "",
+      "img": "https://revistamuseu.com.br/site/images/revista-museu/noticias/not_2022/not_2022_10/bandeira.jpg",
+      "resposta": "humano"
+    },
+    {
+      "obra": "/aaa",
+      "artista": "Homeaa",
+      "descricao": "Homeaa",
+      "prompt": "Homeaaa",
+      "img": "https://static.vecteezy.com/ti/fotos-gratis/t2/22653879-fantasia-ilha-com-cachoeiras-3d-ilustracao-elementos-do-isto-imagem-mobiliado-de-nasa-generativo-ai-gratis-foto.jpg",
+      "resposta": "ia"
+    }
+  ]
+}
