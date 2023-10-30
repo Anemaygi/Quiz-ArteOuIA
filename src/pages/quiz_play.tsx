@@ -2,17 +2,19 @@
 import React, { useState } from 'react';
 import Button from '../components/button';
 import { FiX, FiCheck } from "react-icons/fi";
-import quizData from '../data/quiz.json';
+// import quizData from '../data/quiz.json';
+import { Question } from './quiz';
 
 interface QuizPlayProps {
   next: (step: number) => void;
   points: number;
   setPoints: (result: number) => void;
   total: number;
+  quiz: Question[];
 }
 
-const QuizPlay: React.FC<QuizPlayProps> = ({ next, points, setPoints, total }) => {
-  const quiz = quizData.questions;
+const QuizPlay: React.FC<QuizPlayProps> = ({ next, points, setPoints, total, quiz }) => {
+  // const quiz = quizData.questions;
 
   const [idx, setIdx] = useState(0);
   const [status, setStatus] = useState('na');  // na -> no answer // a1 -> already answer ia // a2 -> already answer humano
@@ -66,7 +68,7 @@ const QuizPlay: React.FC<QuizPlayProps> = ({ next, points, setPoints, total }) =
         <div className="m-3 w-56">
           <Button handleClick={() => {
 
-            if (idx == total - 1) next(2)
+            if (idx == total - 1) next(3)
             setIdx(idx + 1);
             setStatus('na');
 
