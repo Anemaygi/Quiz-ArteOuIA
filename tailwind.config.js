@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         ZenMaru: ['Zen Maru Gothic', 'serif'],
         Oswald: ['Oswald', 'sans-serif'],
+        MuseoModerno: ['MuseoModerno', 'sans-serif'],
       }
     },
   },
