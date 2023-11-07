@@ -45,13 +45,18 @@ function typeQuiz(type: string, total: number) {
 
 const Quiz: React.FC = () => {
 
+  // Change here
+  const total = 2;
+  const type = 'normal';
+  //
+  
   const [step, setStep] = useState(0);
   const [result, setResult] = useState(0);
-  const [quiz, setQuiz] = useState<Question[]>(() => typeQuiz('normal', 2));
-  const total = 2;
+  const [quiz, setQuiz] = useState<Question[]>(() => typeQuiz(type, 2));
+  
 
   useEffect(() => {
-    setQuiz(typeQuiz('normal', total));
+    setQuiz(typeQuiz(type, total));
   }, []);
 
 
