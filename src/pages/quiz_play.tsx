@@ -29,7 +29,7 @@ const QuizPlay: React.FC<QuizPlayProps> = ({ next, points, setPoints, total, qui
         Points:points.toString(),
         Date: new Date(),
       }
-      axios.post('#',data).then((response)=>console.log(response))
+      axios.post(import.meta.env.VITE_STORE_DATA,data).then((response)=>console.log(response))
       next(3);
     }
     setIdx(idx + 1);
