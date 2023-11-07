@@ -27,7 +27,7 @@ const QuizPlay: React.FC<QuizPlayProps> = ({ next, points, setPoints, total, qui
       e.preventDefault();
       const data={
         Points:points.toString(),
-        Date: new Date(),
+        Date: new Date().toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' }),
       }
       axios.post(import.meta.env.VITE_STORE_DATA,data).then((response)=>console.log(response))
       next(3);
