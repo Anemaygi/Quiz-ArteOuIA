@@ -4,11 +4,12 @@ import Navbar from '../components/navbar';
 const IaViesPage: React.FC = () => {
     return (
         <div className="bg-[#0D0D0D] text-timberWolf min-h-screen xl:h-screen h-full w-screen flex items-center p-2">
-            <div className='flex flex-col shadow-lg rounded-lg w-screen h-full p-4 bg-night gap-16'>
+            <div className='flex flex-col shadow-lg rounded-lg w-screen h-full p-4 bg-night gap-16 overflow-y-auto'>
                 <Navbar />
-                <div className="flex gap-8 px-14">
+                <h1 className='font-Oswald text-6xl font-semibold mx-14'>O que é IA e Viés algorítmico?</h1>
+                <div className="flex lg:flex-nowrap flex-wrap px-14">
+                    
                     <div className='flex flex-col gap-10'>
-                        <h1 className='font-Oswald text-6xl font-semibold '>O que é IA e Viés algorítmico?</h1>
                         <h2 className='font-MuseoModerno text-4xl font-bold'>O que é Viés algorítmico?</h2>
                         <p className='font-ZenMaru text-xl font-normal '> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu nibh 
                             et diam volutpat sollicitudin. Donec cursus vel mauris ac placerat. Integer egestas risus quis velit dictum, accumsan
@@ -26,7 +27,7 @@ const IaViesPage: React.FC = () => {
                              Interdum et malesuada fames ac ante ipsum primis in faucibus.
                         </p>
                     </div>
-                    <img className="w-2/5 h-[395px] pt-8" src='src\assets\GenderBias.jpg' alt='Imagem representando viés de gênero - inteligência artificial'></img>
+                    <img className="h-[395px] p-8" src='src\assets\GenderBias.jpg' alt='Imagem representando viés de gênero - inteligência artificial'></img>
                 </div>
             </div>
         </div>

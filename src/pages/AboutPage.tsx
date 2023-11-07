@@ -4,9 +4,9 @@ import Navbar from '../components/navbar';
 const AboutPage: React.FC = () => {
     return (
         <div className="bg-[#0D0D0D] text-timberWolf min-h-screen xl:h-screen h-full w-screen flex items-center p-2">
-            <div className='flex flex-col shadow-lg rounded-lg w-screen h-full p-4 bg-night gap-16'>
+            <div className='flex flex-col shadow-lg rounded-lg w-screen h-full p-4 bg-night gap-16 overflow-y-auto'>
                 <Navbar />
-                <div className="flex gap-8 px-14">
+                <div className="flex gap-8 px-14 lg:flex-nowrap flex-wrap">
                     <div className='flex flex-col gap-10'>
                         <h1 className='font-Oswald text-6xl font-semibold '>Sobre nós</h1>
                         <p className='font-ZenMaru text-xl font-normal'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu nibh 
@@ -25,7 +25,7 @@ const AboutPage: React.FC = () => {
                              Interdum et malesuada fames ac ante ipsum primis in faucibus.
                         </p>
                     </div>
-                    <img className="w-2/5 h-[395px] pt-8" src='src/assets/BlondeBraidsStudyIV.png' alt='Imagem criada por Inteligência artificial. “Blonde Braids Study IV”, de Minne Atairu'></img>
+                    <img className="h-[395px] p-8" src='src/assets/BlondeBraidsStudyIV.png' alt='Imagem criada por Inteligência artificial. “Blonde Braids Study IV”, de Minne Atairu'></img>
                 </div>
             </div>
         </div>
