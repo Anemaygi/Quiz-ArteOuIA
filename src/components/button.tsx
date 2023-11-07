@@ -3,7 +3,7 @@ import React from 'react';
 
 
 interface ButtonProps {
-  handleClick: () => void;
+  handleClick: any;
   text: string;
 }
 
