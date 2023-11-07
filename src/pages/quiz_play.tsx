@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import Button from '../components/button';
 import { FiX, FiCheck } from "react-icons/fi";
-// import quizData from '../data/quiz.json';
 import { Question } from './quiz';
 import axios from 'axios';
 
@@ -17,7 +16,6 @@ interface QuizPlayProps {
 
 
 const QuizPlay: React.FC<QuizPlayProps> = ({ next, points, setPoints, total, quiz }) => {
-  // const quiz = quizData.questions;
 
   const [idx, setIdx] = useState(0);
   const [status, setStatus] = useState('na');  // na -> no answer // a1 -> already answer ia // a2 -> already answer humano
@@ -25,11 +23,11 @@ const QuizPlay: React.FC<QuizPlayProps> = ({ next, points, setPoints, total, qui
   const handleButtonClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (idx === total - 1) {
       e.preventDefault();
-      const data={
-        Points:points.toString(),
+      const data = {
+        Points: points.toString(),
         Date: new Date().toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' }),
       }
-      axios.post(import.meta.env.VITE_STORE_DATA,data).then((response)=>console.log(response))
+      axios.post(import.meta.env.VITE_STORE_DATA, data).then((response) => console.log(response))
       next(3);
     }
     setIdx(idx + 1);
