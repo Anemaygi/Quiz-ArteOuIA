@@ -27,7 +27,7 @@ const IaViesPage: React.FC = () => {
                              Interdum et malesuada fames ac ante ipsum primis in faucibus.
                         </p>
                     </div>
-                    <img className="h-[395px] p-8" src='assets\GenderBias.jpg' alt='Imagem representando viés de gênero - inteligência artificial'></img>
+                    <img className="h-[395px] object-scale-down p-8" src='assets\GenderBias.jpg' alt='Imagem representando viés de gênero - inteligência artificial'></img>
                 </div>
             </div>
         </div>
