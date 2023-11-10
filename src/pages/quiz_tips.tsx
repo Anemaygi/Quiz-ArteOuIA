@@ -36,7 +36,7 @@ const QuizTips: React.FC<QuizOnboardingProps> = ({ next }) => {
 
       <div className="w-full h-full bg-gradient-to-b rounded-lg shadow-md from-[#282828] flex flex-col hover:bg-gradient-to-b items-center justify-center hover:from-[#313131] transition-all ease-in-out hover:duration-300 p-8 group">
         <h1 className="font-Oswald text-semibold text-[2.5rem] p-4 group-hover:text-white transition-all">Como I.A. cria "arte"?</h1>
-        <img className="m-8" src="src\assets\iaarte.png" />
+        <img className="m-8" src="assets\iaarte.png" />
         <p className="font-ZenMaru text-lg text-center overflow-auto">Lorem ipsum dolor sit amet, consectetur dipiscing.Lorem ipsum dolor sit amet, consectetur dipiscing.Lorem ipsum dolor sit amet, consectetur dipiscing.Lorem ipsum dolor sit amet, consectetur dipiscing.</p>
 
 

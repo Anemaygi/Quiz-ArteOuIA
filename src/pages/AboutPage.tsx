@@ -25,7 +25,7 @@ const AboutPage: React.FC = () => {
                              Interdum et malesuada fames ac ante ipsum primis in faucibus.
                         </p>
                     </div>
-                    <img className="h-[395px] p-8" src='src/assets/BlondeBraidsStudyIV.png' alt='Imagem criada por Inteligência artificial. “Blonde Braids Study IV”, de Minne Atairu'></img>
+                    <img className="h-[395px] p-8" src='assets/BlondeBraidsStudyIV.png' alt='Imagem criada por Inteligência artificial. “Blonde Braids Study IV”, de Minne Atairu'></img>
                 </div>
             </div>
         </div>
