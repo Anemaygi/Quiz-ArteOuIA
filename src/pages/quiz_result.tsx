@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface QuizResultProps {
   points: number;
@@ -8,6 +9,7 @@ interface QuizResultProps {
 
 const QuizResult: React.FC<QuizResultProps> = ({ points, total }) => {
 
+  const navigate = useNavigate();
   return (
 
     <div className="h-full w-full flex flex-wrap">
@@ -27,7 +29,7 @@ const QuizResult: React.FC<QuizResultProps> = ({ points, total }) => {
           </div>
         </div>
         <p className="text-lg mt-8">Consuma a tecnologia de forma consciente!</p>
-        <p>Aprenda mais sobre <a className="text-persianRed underline underline-offset-1" href="/entenda">I.A. e viés algoritmos</a></p>
+        <p>Aprenda mais sobre <b className="text-persianRed underline underline-offset-1 hover:cursor-pointer" onClick={() => navigate("/entenda")}>I.A. e viés algoritmos</b></p>
       </div>
       <img className="lg:absolute lg:inset-y-0 lg:right-0 lg:block hidden" src="https://i.imgur.com/NriR4dE.png" />
     </div>
