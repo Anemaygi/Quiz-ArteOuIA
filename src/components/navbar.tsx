@@ -11,11 +11,11 @@ const sidebarItems = [
 const Navbar: React.FC = () => {
 
   return (
-  <div className="font-ZenMaru text-base my-2 flex justify-center lg:justify-start">
+  <div className="font-ZenMaru text-base my-1 flex justify-center lg:justify-start">
     {sidebarItems.map((item,index) => (
           <a
           key={index} 
-          className={`px-8  ${item.href === window.location.pathname ? 'text-persianRed ' : 'hover:text-wine transition-all text-white'}`} 
+          className={`px-4  ${item.href === window.location.pathname ? 'text-persianRed ' : 'hover:text-wine transition-all text-white'}`} 
           href={item.href}>
             {item.title}
           </a>
