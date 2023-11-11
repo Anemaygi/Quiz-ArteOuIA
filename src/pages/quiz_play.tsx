@@ -17,6 +17,7 @@ interface QuizPlayProps {
 
 const QuizPlay: React.FC<QuizPlayProps> = ({ next, points, setPoints, total, quiz }) => {
 
+  const [imageLoading, setImageLoading] = useState(true);
   const [idx, setIdx] = useState(0);
   const [status, setStatus] = useState('na');  // na -> no answer // a1 -> already answer ia // a2 -> already answer humano
 
@@ -45,7 +46,10 @@ const QuizPlay: React.FC<QuizPlayProps> = ({ next, points, setPoints, total, qui
       </div>
       <div className={status == 'na' ? `col-span-2` : `col-span-1`}>
         <div className="h-full flex justify-center items-center ">
-          <img className="object-scale-down" src={quiz[idx].img} />
+        {imageLoading && <div className="w-10 h-10 bg-gradient-to-r from-persianRed to-wine animate-spin rounded-full"></div>}
+          <img className={`object-scale-down ${imageLoading ? 'hidden' : ''}`}
+            src={quiz[idx].img}
+            onLoad={() => setImageLoading(false)}/>
         </div>
       </div>
       <div className=" w-full h-fit flex flex-col justify-end">

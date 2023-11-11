@@ -11,8 +11,8 @@ const Card: React.FC<CardProps> = ({ title, content }) => {
   return (
     <div className="relative flex flex-col items-center">
       <div className="bg-timberWolf h-4 w-4 rounded-full mb-8 hidden md:block"></div>
-      <div className="bg-gradient-to-b rounded-lg shadow-md from-[#282828] h-80 flex flex-col hover:bg-gradient-to-b hover:from-[#313131] transition-all ease-in-out hover:duration-300 items-center p-8 group">
-        <h1 className="font-Oswald text-semibold text-5xl p-4 group-hover:text-white transition-all">{title}</h1>
+      <div className="bg-gradient-to-b rounded-lg shadow-md from-[#282828] h-80 flex flex-col md:hover:bg-gradient-to-b md:hover:from-[#313131] transition-all ease-in-out md:hover:duration-300 items-center p-8 group">
+        <h1 className="font-Oswald text-semibold text-5xl p-4 group-hover:md:text-white transition-all">{title}</h1>
         <p className="font-ZenMaru text-lg text-center overflow-auto">{content}</p>
       </div>
     </div>
