@@ -28,13 +28,20 @@ function getRandomIndexes(total: number, max: number): number[] {
 
 function typeQuiz(type: string, total: number) {
   // function to get the list of items to display
-  const specificOrder = [1, 0];
+  
+  const specificOrder = [1,3,4]; // Change here
+  
+
   let quiz: Question[] = [];
   if (type == 'normal') {
     quiz = quizData.questions.slice(0, total);
   }
   else if (type == 'specific') {
-    quiz = specificOrder.map(index => quizData.questions[index]);
+    let filterSpecificOrder = specificOrder.filter(item => item <= quizData.questions.length);
+    
+    if(filterSpecificOrder.length > quizData.questions.length) filterSpecificOrder.slice(0, total);
+    console.log(filterSpecificOrder)
+    quiz = filterSpecificOrder.map(index => quizData.questions[index])
   }
   else if (type == 'random') {
     const randomIndexes = getRandomIndexes(total, quizData.questions.length);
@@ -45,10 +52,15 @@ function typeQuiz(type: string, total: number) {
 
 const Quiz: React.FC = () => {
 
-  // Change here
-  const total = 2;
-  const type = 'normal';
-  //
+  const type = 'specific'; // Change here
+  let total = 4; // Change here
+
+
+  if(total > quizData.questions.length){
+    total = quizData.questions.length  
+  }
+  
+
   
   const [step, setStep] = useState(0);
   const [result, setResult] = useState(0);
@@ -57,6 +69,7 @@ const Quiz: React.FC = () => {
 
   useEffect(() => {
     setQuiz(typeQuiz(type, total));
+    
   }, []);
 
 

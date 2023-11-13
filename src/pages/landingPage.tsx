@@ -23,7 +23,7 @@ const LandingPage: React.FC = () => {
           </div>
           <div>
 
-            <img className="z-50 xl:absolute bottom-0 right-0 h-full pt-8" src="assets\hero.png" />
+            <img className="z-50 relative xl:absolute bottom-0 right-0 h-full pt-8" src="assets\hero.png" />
           </div>
 
         </div>
