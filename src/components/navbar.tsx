@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
     {sidebarItems.map((item,index) => (
           <div
           key={index} 
-          className={`px-4  ${item.href === window.location.pathname ? 'text-persianRed ' : 'hover:text-wine transition-all cursor-pointer text-white'}`} 
+          className={`px-4  ${item.href === window.location.pathname ? 'text-persianRed cursor-pointer' : 'hover:text-wine transition-all cursor-pointer text-white'}`} 
           onClick={() => {navigate(item.href)}}>
             {item.title}
           </div>

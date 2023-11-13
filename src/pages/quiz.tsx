@@ -38,9 +38,6 @@ function typeQuiz(type: string, total: number) {
   }
   else if (type == 'specific') {
     let filterSpecificOrder = specificOrder.filter(item => item <= quizData.questions.length);
-    
-    if(filterSpecificOrder.length > quizData.questions.length) filterSpecificOrder.slice(0, total);
-    console.log(filterSpecificOrder)
     quiz = filterSpecificOrder.map(index => quizData.questions[index])
   }
   else if (type == 'random') {
@@ -52,26 +49,21 @@ function typeQuiz(type: string, total: number) {
 
 const Quiz: React.FC = () => {
 
-  const type = 'specific'; // Change here
+  const type = 'normal'; // Change here
   let total = 4; // Change here
-
-
-  if(total > quizData.questions.length){
-    total = quizData.questions.length  
-  }
-  
-
   
   const [step, setStep] = useState(0);
   const [result, setResult] = useState(0);
   const [quiz, setQuiz] = useState<Question[]>(() => typeQuiz(type, 2));
   
-
+  
   useEffect(() => {
     setQuiz(typeQuiz(type, total));
-    
   }, []);
 
+  if(total > quiz.length){
+    total = quiz.length;
+  }
 
   return (
     <div className="bg-[#0D0D0D] text-timberWolf h-screen  w-screen flex items-center p-2">
