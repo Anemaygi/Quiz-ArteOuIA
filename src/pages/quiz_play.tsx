@@ -40,7 +40,7 @@ const QuizPlay: React.FC<QuizPlayProps> = ({ next, points, setPoints, total, qui
 
       <div className={`space-y-2 text-2xl p-4 " + ${status == 'na' ? 'hidden' : 'opacity-1'} `}>
         <p className={quiz[idx].resposta == 'ia' ? 'hidden' : ''}><b>Obra:</b> {quiz[idx].obra}</p>
-        <p className={quiz[idx].resposta == 'ia' ? 'hidden' : ''}><b>Artista:</b> {quiz[idx].artista}</p>
+        <p className={quiz[idx].resposta}><b>{quiz[idx].resposta == 'ia' ? 'Plataforma de IA:' : 'Artista:'}</b> {quiz[idx].artista}</p>
         <p className={quiz[idx].resposta == 'humano' ? 'hidden' : ''}><b>Prompt:</b> {quiz[idx].prompt}</p>
         <p className="text-lg">{quiz[idx].descricao}</p>
       </div>

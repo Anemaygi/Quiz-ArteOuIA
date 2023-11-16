@@ -54,7 +54,7 @@ const Quiz: React.FC = () => {
   
   const [step, setStep] = useState(0);
   const [result, setResult] = useState(0);
-  const [quiz, setQuiz] = useState<Question[]>(() => typeQuiz(type, 2));
+  const [quiz, setQuiz] = useState<Question[]>(() => typeQuiz(type, total));
   
   
   useEffect(() => {
