@@ -9,6 +9,22 @@
       "resposta": "humano"
     },
     {
+      "obra": "",
+      "artista": "Runway ML",
+      "descricao": "A imagem de uma mulher negra chorando, gerada em 2016, destaca um problema significativo nas plataformas de IA. Muitas dessas plataformas tendem a gerar imagens distorcidas de mulheres negras, evidenciando questões relacionadas à representação e viés na tecnologia de IA. As distorções nas imagens resultam frequentemente de viés nos conjuntos de dados usados para treinar os modelos de IA. Além disso, a falta de diversidade na equipe envolvida no desenvolvimento e treinamento desses modelos pode contribuir para a perpetuação de estereótipos e viés. Uma equipe diversificada, com perspectivas variadas, é crucial para identificar e corrigir preconceitos nos algoritmos.",
+      "prompt": "A black woman crying",
+      "img": "/assets/ABlackWomanCrying.png",
+      "resposta": "ia"
+    },
+    {
+      "obra": "",
+      "artista": "Midjourney",
+      "descricao": "A imagem foi gerada com o intuito de produzir imagens de mulheres negras com cabelos loiros. Porém, a plataforma produziu uma gêmea com pele mais clara e cabelo loiro. As distorções nas imagens geradas muitas vezes refletem viés nos conjuntos de dados utilizados para treinar os modelos de IA. Se esses conjuntos de dados são dominados por imagens de mulheres brancas, por exemplo, o modelo pode ter dificuldade em gerar representações precisas e justas de mulheres negras.",
+      "prompt": "- não informado-",
+      "img": "/assets/BlondeBraidsStudyIV-Quiz.png",
+      "resposta": "ia"
+    },
+    {
       "obra": "/aaa",
       "artista": "Homeaa",
       "descricao": "Homeaa",
