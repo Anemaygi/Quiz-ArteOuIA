@@ -9,21 +9,11 @@ const AboutPage: React.FC = () => {
                 <div className="flex gap-8 px-14 lg:flex-nowrap flex-wrap">
                     <div className='flex flex-col gap-10'>
                         <h1 className='font-Oswald text-6xl font-semibold '>Sobre nós</h1>
-                        <p className='font-ZenMaru text-xl font-normal'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu nibh 
-                            et diam volutpat sollicitudin. Donec cursus vel mauris ac placerat. Integer egestas risus quis velit dictum, accumsan
-                            varius sem euismod. Quisque id justo cursus, ornare ex at, ullamcorper ligula. In porttitor orci est. Quisque nibh quam, 
-                            dignissim id nibh ut, eleifend porta ex. Nam laoreet velit sed est commodo consectetur. Etiam dictum congue varius. Proin 
-                            elit quam, elementum scelerisque lacus vitae, scelerisque feugiat diam. Nunc orci leo, finibus eget mauris id, sodales 
-                            vulputate tortor.
+                        <p className='font-ZenMaru text-xl font-normal'> Resultante da proposta de avaliação da disciplina <b>ACH0152 - Sociedade, Meio Ambiente e Cidadania (2023)</b>,
+                        que compõe o Ciclo Básico do curso de Sistemas de Informação da EACH USP, a presente plataforma visa explorar de maneira crítica o papel da tecnologia,
+                        especialmente a Inteligência Artificial (IA), na perpetuação de questões relacionadas ao racismo e outros preconceitos.
                         </p>
-                        <p className='font-ZenMaru text-xl font-normal'> Lorem ipsum dolor sit amet consectetur. Nunc vitae lacus vel etiam diam imperdiet justo vitae. 
-                            Mi tempus amet non scelerisque dignissim ac. Purus euismod quam scelerisque enim dui ipsum. 
-                            Leo vestibulum libero commodo ultricies facilisi adipiscing tristique. In efficitur, nisi ultrices cursus 
-                            sollicitudin, lacus lectus accumsan erat, et cursus elit diam aliquet dui. In vitae eros lacus. Nunc elementum 
-                            auctor condimentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut
-                             mattis porta lectus. Praesent a urna dapibus, tincidunt quam quis, blandit est. Nulla nec euismod risus. 
-                             Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                        </p>
+                        <p className='font-ZenMaru text-xl font-normal'> Ao explorar nosso site, convidamos você a se aprofundar nessas questões complexas e a realizar nosso <a style={{ color: '#9d0000' }} href="/quiz">quiz</a> educativo.</p>
                     </div>
                     <img className="h-[395px] object-scale-down p-8" src='assets/BlondeBraidsStudyIV.png' alt='Imagem criada por Inteligência artificial. “Blonde Braids Study IV”, de Minne Atairu'></img>
                 </div>
