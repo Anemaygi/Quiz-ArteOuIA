@@ -25,7 +25,7 @@ const QuizResult: React.FC<QuizResultProps> = ({ points, total }) => {
             </div>
           </div>
           <div className="bg-gradient-to-b rounded-lg shadow-md from-[#282828] h-fit flex flex-col hover:bg-gradient-to-b hover:from-[#313131] transition-all ease-in-out hover:duration-300 items-center p-8 group">
-            <h1 className="font-Oswald text-semibold text-7xl p-4 group-hover:text-white transition-all">{(points / total * 100)}%</h1>
+            <h1 className="font-Oswald text-semibold text-7xl p-4 group-hover:text-white transition-all">{(points / total * 100).toFixed(0)}%</h1>
           </div>
         </div>
         <p className="text-lg mt-8">Consuma a tecnologia de forma consciente!</p>
