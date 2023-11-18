@@ -10,6 +10,27 @@ const IaViesPage: React.FC = () => {
                 <div className="flex lg:flex-nowrap flex-wrap px-14">
                     
                     <div className='flex flex-col gap-5'>
+                        <h2 className='font-MuseoModerno text-4xl font-bold'>O que é IA?</h2>
+                        <p className='font-ZenMaru text-xl font-normal'> O termo Inteligência Artificial (IA) abrange uma variedade de aplicações que realizam tarefas
+                            complexas anteriormente reservadas à interação humana, como interagir com clientes online ou jogar xadrez. Frequentemente, utiliza-se o termo
+                            de forma intercambiável com seus subcampos, que incluem Machine Learning (ML) e Deep Learning.
+                        </p>
+                        <p className='font-ZenMaru text-xl font-normal'> Apesar disso, é crucial reconhecer as distinções entre esses conceitos. O Machine Learning, por
+                            exemplo, concentra-se na criação de sistemas capazes de aprender e aprimorar seu desempenho com base nos dados que recebem. Vale ressaltar que,
+                            embora todo Machine Learning seja IA, nem toda IA é Machine Learning.
+                        </p>
+                        <p className='font-ZenMaru text-xl font-normal'> Em outras palavras, a inteligência artificial é um campo da ciência preocupado com a criação de
+                            computadores e máquinas que podem raciocinar, aprender e atuar de maneira que normalmente exigiria inteligência humana ou que envolvia dados
+                            com escala maior que as pessoas podem analisar.
+                        </p>
+                        <p className='font-ZenMaru text-xl font-normal'> IA é um campo amplo que abrange muitas disciplinas diferentes, incluindo ciência da computação,
+                            análise e estatística de dados, engenharia de hardware e software, linguística, neurociência e até mesmo filosofia e psicologia.
+                        </p>
+                        <p className='font-ZenMaru text-xl font-normal'> Em um nível operacional para uso comercial, a IA é um conjunto de tecnologias baseadas principalmente
+                            em Machine Learning e Deep Learning, usada para análise de dados, previsões e previsão, categorização de objetos, processamento de linguagem
+                            natural, recomendações, recuperação inteligente de dados e muito mais.
+                        </p>
+
                         <h2 className='font-MuseoModerno text-4xl font-bold'>O que é viés algorítmico?</h2>
                         <p className='font-ZenMaru text-xl font-normal'> O viés algorítmico refere-se aos erros sistêmicos e repetíveis em um sistema de computador
                             que criam resultados injustos, como privilegiar um grupo arbitrário de usuários em detrimento de outros.
