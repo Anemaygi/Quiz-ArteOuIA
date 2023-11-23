@@ -29,7 +29,7 @@ const QuizOnboarding: React.FC<QuizOnboardingProps> = ({ next }) => {
 
     <div className="grid grid-cols-1 lg:grid-cols-4 m-8 h-full items-center ">
 
-      <div className="mr-8">
+      <div className="m-8">
         <h1 className='font-Oswald text-6xl font-bold mb-4 text-center lg:text-left '> Quiz </h1>
         <p className='font-ZenMaru text-3xl text-bold text-center lg:text-left'>Você saberia dizer qual arte foi criada por humanos ou por I.A.?</p>
         <div className="py-8 flex justify-center w-full lg:justify-start"><Button text="Continuar" handleClick={() => next(1)} /></div>
