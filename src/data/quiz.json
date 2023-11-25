@@ -23,6 +23,150 @@
       "prompt": "- não informado-",
       "img": "/assets/BlondeBraidsStudyIV-Quiz.png",
       "resposta": "ia"
+    },
+    {
+      "obra": "Criança Morta",
+      "artista": "Candido Portinari",
+      "descricao": "A série “Retirantes” de Portinari é uma crônica visual da luta do povo nordestino contra adversidades. As obras desta série, incluindo “Criança Morta”, trazem à tona o sofrimento humano e as injustiças sociais.",
+      "prompt": "",
+      "img": "https://i.imgur.com/F8mzBfa.jpg",
+      "resposta": "humano"
+    },
+    {
+      "obra": "",
+      "artista": "BlueWillow",
+      "descricao": "Imagem relatando extrema pobreza.",
+      "prompt": "Can you make a picture that relates extreme poverty",
+      "img": "https://i.imgur.com/q622FGj.jpg",
+      "resposta": "ia"
+    },
+    {
+      "obra": "",
+      "artista": "BlueWillow",
+      "descricao": "Imagem relatando extrema pobreza.",
+      "prompt": "Make a picture that relates extreme poverty",
+      "img": "https://i.imgur.com/itZXlt1.jpg",
+      "resposta": "ia"
+    },
+    {
+      "obra": "",
+      "artista": "BlueWillow",
+      "descricao": "Imagem relatando pessoas em situação de fome.",
+      "prompt": "Make painting like picture of two poor skinny boys raising their hands asking for food",
+      "img": "https://i.imgur.com/KGC33Yj.jpg",
+      "resposta": "ia"
+    },
+    {
+      "obra": "Hunger",
+      "artista": "David I Jackson",
+      "descricao": "Milhões de crianças estão sofrendo diariamente com fome e subnutrição ao redor do mundo. No sul do Sudão, 1 em cada 4 crianças sofrem de fome aguda. Organizações como a Feed The Children e a World Vision precisam da sua ajuda para mudar o cenário da fome tanto em casa quanto no exterior.",
+      "prompt": "",
+      "img": "https://i.imgur.com/57MW2Pq.jpg",
+      "resposta": "humano"
+    },
+    {
+      "obra": "",
+      "artista": "Microsoft Bing",
+      "descricao": "Imagem relatando extrema pobreza. Onde há a esteriotipação das pessoas presentes",
+      "prompt": "Make painting like picture of extreme poverty, something like portinari's arts, people suffering and etc.",
+      "img": "https://i.imgur.com/Ay17BCn.jpg",
+      "resposta": "ia"
+    },
+    {
+      "obra": "",
+      "artista": "Microsoft Bing",
+      "descricao": "Imagem relatando extrema pobreza. Onde há a esteriotipação das pessoas presentes",
+      "prompt": "Make painting like picture of extreme poverty, something like portinari's arts, people suffering and etc.",
+      "img": "https://i.imgur.com/XO4TGW8.jpg",
+      "resposta": "ia"
+    },
+    {
+      "obra": "",
+      "artista": "Microsoft Bing",
+      "descricao": "Imagem relatando extrema pobreza. Onde há a esteriotipação das pessoas presentes",
+      "prompt": "Make a painting like picture that relates extreme poverty something like Portinari did on retirantes.",
+      "img": "https://i.imgur.com/lv0ZUSm.jpg",
+      "resposta": "ia"
+    },
+    {
+      "obra": "",
+      "artista": "Microsoft Bing",
+      "descricao": "Imagem relatando trabalho braçal de coleta de algodão, onde há a presença de um viës histórico",
+      "prompt": "Make a picture like painting of two people harvesting cotton",
+      "img": "https://i.imgur.com/CNBCThf.jpg",
+      "resposta": "ia"
+    },
+    {
+      "obra": "Favelas of Rio de Janeiro, Brazil",
+      "artista": "Daniela Matchael",
+      "descricao": "Em 2015, Daniela Matchael criou um projeto de arte multimídia para conscientizar sobre as necessidades das crianças que viviam nas favelas do Rio de Janeiro, Brasil.Este é um grande projeto em andamento que abrange várias organizações sem fins lucrativos que operam em comunidades carentes no Rio.",
+      "prompt": "",
+      "img": "https://i.imgur.com/pNqgEXA.jpg",
+      "resposta": "humano"
+    },
+    {
+      "obra": "Crianças Negras",
+      "artista": "Emmanuel Zamor",
+      "descricao": "",
+      "prompt": "",
+      "img": "https://i.imgur.com/KrbRYgN.jpg",
+      "resposta": "humano"
+    },
+    {
+      "obra": "Zeferina",
+      "artista": "Dalton Paula",
+      "descricao": "",
+      "prompt": "",
+      "img": "https://i.imgur.com/90d7AIV.jpg",
+      "resposta": "humano"
+    },
+    {
+      "obra": "'se eu fosse vocês eu olhava para mim de novo'na série 'pardo é papel'",
+      "artista": "Maxwell Alexandre",
+      "descricao": "",
+      "prompt": "",
+      "img": "https://i.imgur.com/90d7AIV.jpg",
+      "resposta": "humano"
+    },
+    {
+      "obra": "'se eu fosse vocês eu olhava para mim de novo'na série 'pardo é papel'",
+      "artista": "Maxwell Alexandre",
+      "descricao": "",
+      "prompt": "",
+      "img": "https://i.imgur.com/90d7AIV.jpg",
+      "resposta": "humano"
+    },
+    {
+      "obra": "",
+      "artista": "Microsoft Bing",
+      "descricao": "As distorções, imagens e detalhes mostrados numa imagem gerada por IA muitas vezes refletem viés nos conjuntos de dados utilizados para treinar os modelos de IA. Se esses conjuntos de dados são dominados por dados que já trazem com eles viés diversos o modelo terá dificuldade em fugir disso",
+      "prompt": "Painting of hungry people",
+      "img": "https://i.imgur.com/9bjaWHk.jpg",
+      "resposta": "ia"
+    },
+    {
+      "obra": "",
+      "artista": "Microsoft Bing",
+      "descricao": "As distorções, imagens e detalhes mostrados numa imagem gerada por IA muitas vezes refletem viés nos conjuntos de dados utilizados para treinar os modelos de IA. Se esses conjuntos de dados são dominados por dados que já trazem com eles viés diversos o modelo terá dificuldade em fugir disso",
+      "prompt": "Painting of hungry people",
+      "img": "https://i.imgur.com/fXqJAks.jpg",
+      "resposta": "ia"
+    },
+    {
+      "obra": "Sem título",
+      "artista": "Jean Michel",
+      "descricao": "",
+      "prompt": "",
+      "img": "https://i.imgur.com/XUZbxu3.jpg",
+      "resposta": "humano"
+    },
+    {
+      "obra": "Past Times",
+      "artista": "Kerry James Marshall",
+      "descricao": "",
+      "prompt": "",
+      "img": "https://i.imgur.com/Bx8pg1t.jpg",
+      "resposta": "humano"
     }
   ]
 }
