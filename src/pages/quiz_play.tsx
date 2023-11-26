@@ -47,7 +47,7 @@ const QuizPlay: React.FC<QuizPlayProps> = ({ next, points, setPoints, total, qui
       <div className={status == 'na' ? `col-span-2` : `col-span-1`}>
         <div className="h-full flex justify-center items-center ">
         {imageLoading && <div className="w-10 h-10 bg-gradient-to-r from-persianRed to-wine animate-spin rounded-full"></div>}
-          <img className={`object-scale-down ${imageLoading ? 'hidden' : ''}`}
+          <img className={`object-scale-down h-80 ${imageLoading ? 'hidden' : ''}`}
             src={quiz[idx].img}
             onLoad={() => setImageLoading(false)}/>
         </div>

@@ -29,7 +29,7 @@ function getRandomIndexes(total: number, max: number): number[] {
 function typeQuiz(type: string, total: number) {
   // function to get the list of items to display
   
-  const specificOrder = [1,3,4]; // Change here
+  const specificOrder = [17, 7, 16, 19, 4]; // Change here
   
 
   let quiz: Question[] = [];
@@ -49,8 +49,8 @@ function typeQuiz(type: string, total: number) {
 
 const Quiz: React.FC = () => {
 
-  const type = 'normal'; // Change here
-  let total = 4; // Change here
+  const type = 'specific'; // Change here
+  let total = 5; // Change here
   
   const [step, setStep] = useState(0);
   const [result, setResult] = useState(0);
